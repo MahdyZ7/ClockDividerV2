@@ -9,9 +9,11 @@ module testbench();
 
 
 	Div2 d2 (.reset(rst), .clk(clk), .out(q));
-	Div9 dut (.reset(rst),.clk(clk), .out(q0));
-	Div9alt dut2 (.reset(rst),.clk(clk), .out(q1));
-	// Div80 dut3 (.reset(rst),.clk(clk), .out(q2));
+	Div9 dut (.reset(rst),.clk(clk), .div9(q0));
+	Div9alt dut2 (.reset(rst),.clk(clk), .div9(q1));
+	Div80 dut3 (.reset(rst),.clk(clk), .div80(q2));
+	Div80alt dut4 (.reset(rst),.clk(clk), .div80(q2));
+	dividerblock db (.reset(rst), .clk(clk));
 	counter counter (.rst(rst), .clk(clk), .counter(count));
 	initial begin
 		rst = 0;

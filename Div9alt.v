@@ -1,7 +1,7 @@
 module Div9alt(
 	input	reset,
 	input	clk,
-	output	out,
+	output	div9,
 	inout	VDD,
 	inout	VSS
 );
@@ -21,16 +21,16 @@ module Div9alt(
 	assign pt2 = midC & midD;
 	always @(posedge clk) begin
 		if (~reset) begin
-			midA = 0;
-			midB = 0;
-			midC = 0;
-			midD = 0;
-			t1 = 0;
-			t2 = 0;
+			midA <= 0;
+			midB <= 0;
+			midC <= 0;
+			midD <= 0;
+			t1 <= 0;
+			t2 <= 0;
 		end else begin
 			midD <= ~midC;
 			midC <= midA & (~midB | midC);
-			midB <= ~midA & midD | midA & ~midB & ~midD;
+			midB <= midA ^ midD;
 			midA <= midA & ~midB | midB & midD;
 			if (~midC & ~midD)
 				t1 <= ~t1;
@@ -42,6 +42,6 @@ module Div9alt(
 				t2 <= ~t2;
 		end
 	end
-	assign out = t1^t2;
+	assign div9 = t1^t2;
 
 endmodule

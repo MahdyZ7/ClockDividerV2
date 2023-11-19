@@ -1,7 +1,7 @@
 module Div9(
 	input	reset,
 	input	clk,
-	output	out,
+	output	div9,
 	inout	VDD,
 	inout	VSS
 );
@@ -31,6 +31,6 @@ module Div9(
 			// cc <= cc +1;
 		end
 	end
-	assign out = (~mid4 & (mid1 | mid2)) | (clk & mid2);	
+	assign div9 = (~mid4 & (mid1 | mid2)) | (clk & mid2);	
 
 endmodule

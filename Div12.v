@@ -1,7 +1,7 @@
 module Div12(
 	input	reset,
 	input	clk,
-	output	reg out,
+	output	reg div12,
 	inout	VDD,
 	inout	VSS
 );
@@ -11,13 +11,13 @@ module Div12(
 	always @(posedge clk) begin
 		if (~reset) begin
 			count <= 0;
-			out <= 0;
+			div12 <= 0;
 		end else begin
 			count[0] <= count[1];
 			count[1] <= ~count[2];
 			count[2] <= count[0];
 			if (~count[2] & ~count[1])
-				out = ~out;
+				div12 = ~div12;
 		end
 	end
 endmodule
