@@ -1,20 +1,18 @@
-Warning: Design 'dividerblock' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 check_design summary:
 Version:     S-2021.06-SP5-5
-Date:        Mon Nov 20 16:34:43 2023
+Date:        Mon Nov 20 17:18:02 2023
 ****************************************
 
                    Name                                            Total
 --------------------------------------------------------------------------------
 Inputs/Outputs                                                      6
-    Multiply driven inputs (LINT-6)                                 2
-    Unconnected ports (LINT-28)                                     4
+    Unconnected ports (LINT-28)                                     6
 --------------------------------------------------------------------------------
 
-Warning: In design 'dividerblock', input port 'reset' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
-Warning: In design 'dividerblock', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'Div9alt', port 'VDD' is not connected to any nets. (LINT-28)
+Warning: In design 'Div9alt', port 'VSS' is not connected to any nets. (LINT-28)
 Warning: In design 'Div12', port 'VDD' is not connected to any nets. (LINT-28)
 Warning: In design 'Div12', port 'VSS' is not connected to any nets. (LINT-28)
 Warning: In design 'Div80alt', port 'VDD' is not connected to any nets. (LINT-28)

@@ -1,32 +1,4 @@
-Information: Building the design 'Div9alt'. (HDL-193)
-Warning:  ./Div9alt.v:39: Net t2 or a directly connected net may be driven by more than one process or block. (ELAB-405)
-
-Inferred memory devices in process
-	in routine Div9alt line 22 in file
-		'./Div9alt.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|      midA_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|       t1_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|       t2_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|      midB_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|      midC_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|      midD_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-===============================================================================
-
-Inferred memory devices in process
-	in routine Div9alt line 39 in file
-		'./Div9alt.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|       t2_reg2       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-===============================================================================
-Error:  ./Div9alt.v:39: Net 't2' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
-*** Presto compilation terminated with 1 errors. ***
-Warning: Unable to resolve reference 'Div9alt' in 'dividerblock'. (LINK-5)
-Warning: Design 'dividerblock' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Uniquified 1 instances of design 'Div9alt'. (OPT-1056)
 Information: Uniquified 1 instances of design 'Div12'. (OPT-1056)
 Information: Uniquified 1 instances of design 'Div80alt'. (OPT-1056)
 1
