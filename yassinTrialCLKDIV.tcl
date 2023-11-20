@@ -37,7 +37,7 @@ sh date > ${TRIAL_DIR}/lock_date
 ## ANALYZE THE RTL CODE or Read the GTECH 
 ####################################################################
 ## name of files to synthasise -.-
-analyze -format verilog { ./dividerblock.v ./Div9alt.v ./Div12.v \
+analyze -format verilog { ./Div9alt.v ./Div12.v ./dividerblock.v \
 		     ./Div80alt.v}
 
 #read_sverilog /eda_work/Asif/FLL_final_rtl/gf22_FLL.sv
