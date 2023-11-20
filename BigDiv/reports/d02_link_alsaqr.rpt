@@ -1,0 +1,54 @@
+
+  Linking design 'dividerblock'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/20lvt/GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC20SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/20slvt/GF22FDX_SC8T_104CPP_BASE_CSC20SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC24L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/24lvt/GF22FDX_SC8T_104CPP_BASE_CSC24L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC24SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/24slvt/GF22FDX_SC8T_104CPP_BASE_CSC24SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/28lvt/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  GF22FDX_SC8T_104CPP_BASE_CSC28SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/28slvt/GF22FDX_SC8T_104CPP_BASE_CSC28SL_SSG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.db
+  IN22FDX_R1PH_NFHN_W00256B046M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/IN22FDX_R1PH_NFHN_W00256B046M02C256_dbs/IN22FDX_R1PH_NFHN_W00256B046M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C.db
+  IN22FDX_R1PH_NFHN_W00256B128M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/IN22FDX_R1PH_NFHN_W00256B128M02C256_dbs/IN22FDX_R1PH_NFHN_W00256B128M02C256_104cpp_SSG_0P720V_0P000V_0P000V_M40C.db
+  IN22FDX_S1D_NFRG_W04096B032M04C128_104cpp_SSG_0P720V_0P720V_0P000V_0P000V_M40C (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/IN22FDX_S1D_NFRG_W04096B032M04C128_dbs/IN22FDX_S1D_NFRG_W04096B032M04C128_104cpp_SSG_0P720V_0P720V_0P000V_0P000V_M40C.db
+  IN22FDX_GPIO18_10M19S20PS_SSG_0P72_1P08_M40 (library)
+                              /KSRC_lab_share/GF22NMFDSOI/dbs/io_stag/IN22FDX_GPIO18_10M19S20PS_SSG_0P72_1P08_M40.db
+
+Information: Building the design 'Div9alt'. (HDL-193)
+Warning:  ./Div9alt.v:39: Net t2 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+
+Inferred memory devices in process
+	in routine Div9alt line 22 in file
+		'./Div9alt.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      midA_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       t1_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       t2_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      midB_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      midC_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      midD_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Div9alt line 39 in file
+		'./Div9alt.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       t2_reg2       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Error:  ./Div9alt.v:39: Net 't2' or a directly connected net is driven by more than one source, and not all drivers are three-state. (ELAB-366)
+*** Presto compilation terminated with 1 errors. ***
+Warning: Unable to resolve reference 'Div9alt' in 'dividerblock'. (LINK-5)
+0

@@ -28,8 +28,8 @@ module Div80alt(
 			count8[0] <= ~(count8[1] ^ count8[2]);
 			if(count5[2] == 0 && count8 == 0)
 				div80 <= ~div80;
-			div8 = ~count8[2];
-			div4 = ~(count8[1] ^ count8[2]);
+			div8 <= ~count8[2];
+			div4 <= ~(count8[1] ^ count8[2]);
 		end
 	end
 

@@ -1,0 +1,32 @@
+Warning: Design 'dividerblock' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : dividerblock
+Version: S-2021.06-SP5-5
+Date   : Mon Nov 20 16:03:46 2023
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+Resource sharing reports are created during the compile command,
+so the design must be compiled before resource sharing can be reported.
+ 
+****************************************
+Design : CLKDivider_Div80alt_1
+****************************************
+
+No implementations to report
+
+Resource sharing reports are created during the compile command,
+so the design must be compiled before resource sharing can be reported.
+ 
+****************************************
+Design : CLKDivider_Div12_1
+****************************************
+
+No implementations to report
+1

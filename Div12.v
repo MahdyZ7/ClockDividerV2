@@ -17,7 +17,7 @@ module Div12(
 			count[1] <= ~count[2];
 			count[2] <= count[0];
 			if (~count[2] & ~count[1])
-				div12 = ~div12;
+				div12 <= ~div12;
 		end
 	end
 endmodule

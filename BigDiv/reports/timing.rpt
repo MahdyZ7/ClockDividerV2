@@ -1,0 +1,31 @@
+Warning: Design 'dividerblock' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dividerblock
+Version: S-2021.06-SP5-5
+Date   : Mon Nov 20 16:03:46 2023
+****************************************
+
+Operating Conditions: SSG_0P72V_0P00V_0P00V_0P00V_M40C   Library: GF22FDX_SC8T_104CPP_BASE_CSC20L_SSG_0P72V_0P00V_0P00V_0P00V_M40C
+Wire Load Model Mode: top
+
+  Startpoint: d9/VDD (internal pin)
+  Endpoint: VDD (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  d9/VDD (Div9alt)                         0.00       0.00 r
+  VDD (inout)                              0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,50 @@
+Error: Could not read the following target libraries:
+/KSRC_lab_share/GF22NMFDSOI/dbs/io_stag/IN22FDX_GPIO18_10M19S40PI_SSG_0P72_1P62_M40.db 
+ (UIO-3)
+ 
+****************************************
+Report : clock_gating
+Design : dividerblock
+Version: S-2021.06-SP5-5
+Date   : Mon Nov 20 16:03:46 2023
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        0         |
+          |                                       |                  |
+          |    Number of Gated registers          |     0 (0.00%)    |
+          |                                       |                  |
+          |    Number of Ungated registers        |    13 (100.00%)  |
+          |                                       |                  |
+          |    Total number of registers          |       13         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |    13 (100.00%)  |
+          |                                                 |                  |
+          |  Number of registers                            |       13         |
+          +-------------------------------------------------+------------------+
+
+
+
+1

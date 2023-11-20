@@ -26,7 +26,6 @@ module Div9alt(
 			midC <= 0;
 			midD <= 0;
 			t1 <= 0;
-			t2 <= 0;
 		end else begin
 			midD <= ~midC;
 			midC <= midA & (~midB | midC);
@@ -37,7 +36,9 @@ module Div9alt(
 		end
 	end
 	always @(negedge clk) begin
-		if (reset) begin
+		if (~reset)
+			t2 <= 0;
+		else begin
 			if(midC & midD)
 				t2 <= ~t2;
 		end
